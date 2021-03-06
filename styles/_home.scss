@@ -1,8 +1,23 @@
 .home {
-	height: 100%;
-	padding-top: 40vh;
+	height: 100vh;
+	padding-top: 32vh;
 	overflow: hidden;
 	align-items: center;
 	text-align: center;
-	background: url();
+	background: linear-gradient(to right, rgba($dark-color, 0.5), rgba($dark-color, 0.3)),
+		url("https://images.unsplash.com/photo-1615011950139-d02f8f4d832c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2002&q=80")
+			center top;
+	background-size: cover;
+	border: 1px solid black;
+	&__name {
+		font-size: 5rem;
+		padding-bottom: 0.2em;
+		margin-top: 0.2em;
+		border-bottom: 2px solid $light-color;
+
+		span {
+			color: $accent-color;
+			font-weight: map-get($font-weights, "bold");
+		}
+	}
 }

@@ -1,12 +1,14 @@
 @import "resets";
 @import "variable";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=RocknRoll+One&display=swap");
-
+@import "navbar";
+@import "home";
 body {
 	background-color: $bg-color;
 	color: $dark-color;
 	font-family: $roboto;
 	line-height: 1.6;
+	user-select: none;
 }
 
 h1,
@@ -20,14 +22,6 @@ a {
 	text-decoration: none;
 }
 
-header {
-	position: fixed;
-	z-index: 2;
-	width: 100%;
-	padding: 1rem;
-	background-color: $accent-color;
-}
-
 main {
 	height: 100%;
 	width: 100%;
@@ -38,7 +32,7 @@ main {
 		left: 1rem;
 
 		a {
-			color: $dark-color;
+			color: $light-color;
 			padding: 0.4em;
 
 			&:hover {
@@ -55,5 +49,5 @@ footer {
 	right: 1rem;
 	text-align: right;
 	padding: 1em;
-	color: $dark-color;
+	color: $light-color;
 }
