@@ -35,7 +35,10 @@
 		margin: 2em auto 1em auto;
 
 		&__job {
+			padding: 5px 0;
 			text-align: center;
+			background-color: lighten($dark-color, 10%);
+			border-bottom: 5px solid $accent-color;
 
 			h3 {
 				margin: 10px 0;

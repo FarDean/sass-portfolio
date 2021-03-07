@@ -9,6 +9,7 @@ header {
 	.logo {
 		letter-spacing: 4px;
 		text-transform: uppercase;
+		color: $dark-color;
 	}
 }
 
@@ -97,11 +98,16 @@ header {
 
 .links {
 	display: none;
+	height: 7vh;
+
 	@include mobile {
 		display: block;
 	}
 	ul {
 		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 7vh;
 		list-style: none;
 
 		a {
