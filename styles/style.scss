@@ -1,11 +1,13 @@
 @import "resets";
 @import "variable";
+@import "mixins";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=RocknRoll+One&display=swap");
 @import "navbar";
 @import "home";
+@import "about";
 body {
-	background-color: $bg-color;
-	color: $dark-color;
+	background-color: $dark-color;
+	color: $light-color;
 	font-family: $roboto;
 	line-height: 1.6;
 	user-select: none;

@@ -12,6 +12,17 @@ header {
 	}
 }
 
+%a {
+	transition: color 0.3s ease;
+	&:hover {
+		color: darken($light-color, 50%);
+	}
+
+	&:active {
+		color: darken($light-color, 100%);
+	}
+}
+
 .nav {
 	height: 100%;
 	display: flex;
@@ -21,6 +32,9 @@ header {
 }
 
 .check {
+	@include mobile {
+		display: none;
+	}
 	display: flex;
 	flex-direction: column;
 	width: 30px;
@@ -76,14 +90,26 @@ header {
 		transition: opacity 0.32s ease;
 
 		a {
-			transition: color 0.3s ease;
-			&:hover {
-				color: darken($light-color, 50%);
-			}
+			@extend %a;
+		}
+	}
+}
 
-			&:active {
-				color: darken($light-color, 100%);
-			}
+.links {
+	display: none;
+	@include mobile {
+		display: block;
+	}
+	ul {
+		display: flex;
+		list-style: none;
+
+		a {
+			@extend %a;
+		}
+
+		li + li {
+			padding-left: 20px;
 		}
 	}
 }
