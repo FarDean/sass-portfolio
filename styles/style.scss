@@ -5,6 +5,7 @@
 @import "navbar";
 @import "home";
 @import "about";
+@import "projects";
 body {
 	background-color: $dark-color;
 	color: $light-color;
@@ -58,4 +59,7 @@ footer {
 	a {
 		color: darken($light-color, 50%);
 	}
+}
+.text-secondary {
+	color: $accent-color;
 }
